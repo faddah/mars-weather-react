@@ -10,12 +10,12 @@ import {
   min,
   max,
   readingsCount,
-} from "./dateSelectors";
-import MarsInsightDescription from "./MarsInstightDescription";
-import MarsWeatherTitleHeader from "./MarsWeatherTitleHeader";
-import formattedDate from "./formattedDate";
-import barometerFormatted from "./barometerFormatted";
-import capitalizeWord from "./capitalizeWord";
+} from "./helpers/dateSelectors";
+import MarsInsightDescription from "./templates/MarsInstightDescription";
+import MarsWeatherTitleHeader from "./templates/MarsWeatherTitleHeader";
+import formattedDate from "./helpers/formattedDate";
+import barometerFormatted from "./helpers/barometerFormatted";
+import capitalizeWord from "./helpers/capitalizeWord";
 import './mars-weather.css'
 
 export default function App() {
@@ -53,12 +53,12 @@ export default function App() {
 
     return (
       <div className="header">
-        <div className="flex-container">
-          <div className="main-content">
             <MarsWeatherTitleHeader />
-            <MarsInsightDescription />
-          </div>
-        </div>
-      </div>
+				<div className="flex-container">
+					<div className="main-content">
+						<MarsInsightDescription />
+					</div>
+				</div>
+			</div>
     );
 }
