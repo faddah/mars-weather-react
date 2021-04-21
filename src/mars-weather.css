@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=B612&display=swap");
+@font-face {
+    font-family: "Andromeda";
+    src: url("./andromeda-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/05/13/17/mars.jpg);
+    color: lightgreen;
+    font-family: "Andromeda", "B612", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10% 2%;
+}
+
+
+/* h1 {} */
+
+.page-title {
+    font-size: 60px;
+    text-align: center;
+    /*   #D3D3D3 */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.insight-description {
+    background-color: sienna;
+    border: 3px solid darkred;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px brown;
+    font-size: 30px;
+    margin: 3% 20%;
+    padding: 3%;
+}
+
+.box-temperature-display {
+    flex-wrap: nowrap;
+}
+
+.barometric-table {
+    border-spacing: 0.125rem;
+    /* margin: 5% -20%;
+    transform: translateX(25%); */
+    width: auto;
+}
+
+.header-row {
+    align-items: baseline;
+    font-size: 30px;
+    font-weight: 900;
+    /* justify-content: center; */
+}
+
+th {
+    padding: 0 3%;
+    min-width: 3rem;
+}
+
+.th-auto-width {
+    width: auto;
+}
+
+.pressure-head {
+    min-width: 50px;
+}
+
+.table-data {
+    font-size: 28px;
+}

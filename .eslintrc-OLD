@@ -1,0 +1,19 @@
+{
+  "extends": ["prettier"],
+  "rules": {
+    "no-console": 0,
+    "no-plusplus": "off",
+    // "quotes": [2, "backtick"],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    ]
+  },
+  "plugins": ["prettier"]
+}
